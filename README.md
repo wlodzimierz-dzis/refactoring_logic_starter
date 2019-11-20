@@ -16,7 +16,7 @@ and textual verification (gilded_rose.js). We want you to implement some modific
 
 Our goal is to refactor the code first before we add new functionality.
 
-## Text-based approval testing
+## Text-based approval testing/snapshot testing
 
 We have no tests other than gilded_rose.js textual verification.
 Run the JS file to see what it does.
