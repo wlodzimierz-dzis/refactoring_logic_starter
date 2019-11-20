@@ -14,12 +14,22 @@ class Shop {
         item.sellIn -= 1;
     }
 
+    brieUpdate(item) {
+        if(item.sellIn > 0) item.quality += 1;
+        if(item.sellIn <= 0) item.quality += 2;
+        if(item.quality > 50) item.quality = 50;
+        item.sellIn -= 1;
+    }
+
     updateQuality() {
         this.items.forEach(item => {
 
             // seam
             if(item.name === "+5 Dexterity Vest") {
                 return this.normalUpdate(item);
+            }
+            if(item.name === "Aged Brie") {
+                return this.brieUpdate(item);
             }
 
             if (item.name != 'Aged Brie' && item.name != 'Backstage passes to a TAFKAL80ETC concert') {
