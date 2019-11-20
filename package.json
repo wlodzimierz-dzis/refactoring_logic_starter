@@ -1,8 +1,10 @@
 {
   "scripts": {
-    "test": "tape test/*.js | tap-spec"
+    "test": "tape test/*.js | tap-spec",
+    "coverage": "nyc --reporter=html tape test/*.js"
   },
   "devDependencies": {
+    "nyc": "14.1.1",
     "tap-nyan": "1.1.0",
     "tap-spec": "5.0.0",
     "tape": "4.11.0"

@@ -19,7 +19,7 @@ function verify({itemName, sellIn, quality}) {
 
 
 test("normal item before sell date", verify({
-    itemName: "+5 Dexterity Vest",
+    itemName: "Elixir of the Mongoose",
     sellIn: {before: 10, after: 9},
     quality: {before: 20, after: 19},
 }));

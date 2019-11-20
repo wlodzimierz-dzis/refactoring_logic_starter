@@ -150,7 +150,7 @@ Run tests to verify if everything is still fine.
 Based on the requirement.txt I know that Aged Brie should:
 * decrease sellIn by 1
 * increase quality by 1 when sellIn > 0
-* increase quality by 2 when sellIn < 0
+* increase quality by 2 when sellIn <= 0
 * never increase quality above 50
 
 Implement brieUpdate(item) and inject it similarly to the previous seam.
